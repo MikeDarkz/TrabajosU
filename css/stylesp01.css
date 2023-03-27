@@ -1,0 +1,246 @@
+body {
+    font-family: Arial, Verdana, sans-serif;
+    font-size: 90%;
+    color: #3c3c3c;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-image: url('../images/icon-plus.png');
+    line-height: 1.6em;
+}
+
+header {
+    text-align: center;
+    background-color: #3775b0;
+    color: #f0f0f0;
+    padding: 20px;
+}
+
+table {
+    border-spacing: 0px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1520px;
+}
+
+th,
+td {
+    padding: 5px 30px 5px 10px;
+    border-spacing: 0px;
+    font-size: 90%;
+    margin: 0px;
+}
+
+tr {
+    text-align: left;
+    background-color: #c1c3e1;
+    border-top: 1px solid #f1f8fe;
+    border-bottom: 1px solid #cbd2d8;
+    border-right: 1px solid #cbd2d8;
+}
+
+tr.head th {
+    color: #fff;
+    background-color: #5b63fc;
+    border-bottom: 2px solid #547ca0;
+    border-right: 1px solid #749abe;
+    text-align: center;
+}
+
+tr:hover, tr.even:hover {
+    transition: 600ms;
+    background-color: #301f8f !important;
+    color: #f0f0f0;
+}
+
+tr > th:last-child, tr > td:last-child {
+    width: 10%;
+}
+
+tr > td > button {
+    width: 100%;
+    min-width: 20%;
+    cursor: pointer;
+    border: 1px solid #5b63fc;
+    background-color: #5b63fc;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+td {
+    text-shadow: 1px 1px 1px #ffffff;
+}
+
+tr.even {
+    background-color: #afb2e1;
+}
+
+tr.head th:first-child {
+    -webkit-border-top-left-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    border-top-left-radius: 5px;
+}
+
+tr.head th:last-child {
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topright: 5px;
+    border-top-right-radius: 5px;
+}
+
+fieldset {
+    width: 310px;
+    margin-top: 20px;
+    border: 1px solid #d6d6d6;
+    background-color: #c2c6ff;
+    line-height: 1.6em;
+    margin: 0 auto;
+    box-shadow: 1px 1px 10px #000;
+}
+
+form {
+    margin-top: 20px;
+}
+
+form > .submit {
+    margin: 0 auto;
+}
+
+legend {
+    font-style: italic;
+    color: #666666;
+    margin: 0 auto;
+    width: 310px;
+}
+
+input[type='text'] {
+    width: 200px;
+    border: 1px solid #747be7;
+    padding: 2px;
+    outline: none;
+    border-radius: 5px;
+}
+
+input[type='text']:focus,
+input[type='text']:hover {
+    background-color: #a3a8ff;
+    border: 1px solid #5b63fc;
+    transition: 300ms;
+}
+
+input[type='submit'] {
+    border: 1px solid #5b63fc;
+    background-color: #5b63fc;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+input[type='submit']:hover {
+    border: 1px solid #006633;
+    background-color: #00cc33;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.title {
+    float: left;
+    width: 130px;
+    clear: left;
+}
+
+select {
+    width: 150px;
+    border-radius: 5px;
+    border: 1px solid #747be7;
+}
+
+select:hover {
+    background-color: #a3a8ff;
+    border: 1px solid #5b63fc;
+    transition: 300ms;
+}
+
+.submit {
+    width: 310px;
+    text-align: right;
+}
+
+footer {
+    font-size: 80%;
+    padding: 7px 0px 0px 20px;
+}
+
+@media screen and (max-width: 768px) {
+
+    body {
+        size: 28px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    table, tbody, tr, th.head, th, td {
+        display: block;
+    }
+    tr.head {
+        position: absolute;
+        top: -9999px;
+        left: -9999px
+    }
+
+    tr {
+        border: 1px solid #ccc;
+    }
+
+    tr>th, td {
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 50%;
+    }
+
+    td:before {
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+    }
+
+    td:nth-of-type(1):before {
+        content: "Bogotá"
+    }
+
+    td:nth-of-type(2):before {
+        content: "Ibagué"
+    }
+
+    td:nth-of-type(3):before {
+        content: "Medellín"
+    }
+
+    fieldset {
+        width: 80%;
+    }
+
+    .submit {
+        width: 100%;
+        text-align: center;
+    }
+
+    input[type='submit'] {
+        width: 80%;
+    }
+}
