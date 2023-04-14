@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Frases de los simpson!</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+      <header>
+
+      </header>
+
+      <section>
+
+      </section>
+
+    <script>
+
+    async function generarDalle() {
+        let descripcion = prompt("Ingresa un texto para convertir en imagen!", "Galaxia hiperrealista");
+        const requestURL = 'https://api.openai.com/v1/images/generations';
+        const request = new Request(requestURL);
+
+        const response = await fetch(request, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Authorization': 'Bearer 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'
+            },
+            body: JSON.stringify({
+                "prompt": descripcion,
+                "n": 1,
+                "size": "512x512"
+            })
+        });
+        const dalleResponse = await response.text();
+        const imgGenerada = JSON.parse(dalleResponse);
+        populateHeader(imgGenerada);
+    }
+
+    async function populate() {
+
+      const requestURL = 'https://thesimpsonsquoteapi.glitch.me/quotes?count=10';
+      const request = new Request(requestURL);
+
+      const response = await fetch(request);
+      const simpsonCharacterText = await response.text();
+
+      const simpsonCharacter = JSON.parse(simpsonCharacterText);
+      populateSimpson(simpsonCharacter);
+    }
+
+    function populateHeader(dalleResponse) {
+      const header = document.querySelector('header');
+      const dalleImg = document.createElement('img');
+      console.log(dalleResponse)
+      dalleImg.src = dalleResponse.data[0].url;
+      dalleImg.width = 500;
+      dalleImg.height = 500;
+      header.appendChild(dalleImg);
+    }
+
+    function populateSimpson(obj) {
+      const section = document.querySelector('section');
+      for (const simpson of obj) {
+        const myArticle = document.createElement('article');
+        const simpsonImage = document.createElement('img');
+        const myH2 = document.createElement('h2');
+        const myPara1 = document.createElement('p');
+        // const myPara2 = document.createElement('p');
+        // const myPara3 = document.createElement('p');
+        // const myList = document.createElement('ul');
+
+        myH2.textContent = simpson.character;
+        myPara1.textContent = `${simpson.quote}`;
+        simpsonImage.src = simpson.image;
+        simpsonImage.width = 200;
+        simpsonImage.height = 200;
+        // myPara2.textContent = `Age: ${hero.age}`;
+        // myPara3.textContent = 'Superpowers:';
+
+        
+        myArticle.appendChild(simpsonImage);
+        myArticle.appendChild(myH2);
+        myArticle.appendChild(myPara1);
+        // myArticle.appendChild(myPara3);
+        // myArticle.appendChild(myList);
+
+        section.appendChild(myArticle);
+      }
+    }
+
+    generarDalle();
+    populate();
+
+    </script>
+  </body>
+</html>
