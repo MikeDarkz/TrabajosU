@@ -1,0 +1,71 @@
+Back
+security js
+cors: {
+    allRoutes: true,
+    allowOrigins: '*',
+    allowCredentials: false,
+  },
+  
+  datastores.js
+  module.exports.datastores = {
+  default: {
+    adapter: 'sails-mysql',
+    user: 'uuq6exwsfbeca2tn',
+    password: 'YRZMy8TAAUuAKyL9LkqG',
+    port: '3306',
+    host: 'boh3vkasm2ci1linhuch-mysql.services.clever-cloud.com',
+    database: 'boh3vkasm2ci1linhuch',
+  },
+
+
+};
+
+sails generate api nombre
+generar bbdd
+en modelo de api generado poner atributos según la bbd
+
+/**
+ * Personas.js
+ *
+ * @description :: A model definition represents a database table/collection.
+ * @docs        :: https://sailsjs.com/docs/concepts/models-and-orm/models
+ */
+
+module.exports = {
+
+  attributes: {
+    nombre: { type: 'string', required: true },
+    apellido: { type: 'string', required: true },
+    edad: { type: 'number', required: false },
+    genero: { type: 'string', required: false },
+  },
+
+};
+
+----------------------------------------------------------------------------------------------------------------------------------
+Front
+
+consumo-api.service.ts
+import {HttpClient, HttpResponseMessage} from 'aurelia-http-client';
+  
+export class ConsumoApi {
+    httpClient = new HttpClient();
+
+    constructor(){
+        
+    }
+
+    crearRequest(): Promise<HttpResponseMessage>{            
+        return this.httpClient.createRequest('localhost:1337/personas')
+        .asGet()
+        .withBaseUrl('localhost:1337/personas')
+        .send()
+        .then((response));
+    }
+    
+    getPersonas(){
+        this.crearRequest().subscribe((respuesta) => {
+            console.log(respuesta);
+        })
+    }   
+}
