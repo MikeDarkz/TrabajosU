@@ -16,7 +16,7 @@
 module.exports.security = {
 
   cors: {
-    allRoutes: false,
+    allRoutes: true,
     allowOrigins: '*',
     allowCredentials: false,
   },
