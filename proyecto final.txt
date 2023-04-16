@@ -24,6 +24,8 @@ sails generate api nombre
 generar bbdd
 en modelo de api generado poner atributos según la bbd
 
+npm install sails-mysql
+
 /**
  * Personas.js
  *
