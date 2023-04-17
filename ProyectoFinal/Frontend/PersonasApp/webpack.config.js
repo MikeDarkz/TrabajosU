@@ -66,7 +66,7 @@ module.exports = function(env, { analyze }) {
     },
     module: {
       rules: [
-        { test: /\.(png|svg|jpg|jpeg|gif)$/i, type: 'asset' },
+        { test: /\.(png|svg|jpg|jpeg|gif)$/i, type: 'asset/resource' },
         { test: /\.(woff|woff2|ttf|eot|svg|otf)(\?v=[0-9]\.[0-9]\.[0-9])?$/i,  type: 'asset' },
         { test: /\.css$/i, use: [ 'style-loader', cssLoader, postcssLoader ] },
         { test: /\.ts$/i, use: ['ts-loader', '@aurelia/webpack-loader'], exclude: /node_modules/ },

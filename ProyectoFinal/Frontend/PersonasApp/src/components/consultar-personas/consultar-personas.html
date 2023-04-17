@@ -1,0 +1,33 @@
+<div class="container">
+    <h1 class="text-muted">Registro de personas</h1>
+    <button class="waves-effect waves-light btn" click.trigger="redirigirCreacion()">
+        <i class="material-icons left">add</i> Crear persona
+    </button>
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">Nombre</th>
+                <th scope="col">Apellido</th>
+                <th scope="col">Edad</th>
+                <th scope="col">Género</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr repeat.for="persona of personas">
+                <th scope="row">${persona.nombre}</th>
+                <th>${persona.apellido}</th>
+                <td>${persona.edad}</td>
+                <td>${persona.genero}</td>
+                <td>
+                    <button class="waves-effect waves-light btn" click.trigger="redirigirEliminar(persona.id)">
+                        <i class="material-icons left">delete</i> Eliminar
+                    </button>
+                    <button class="waves-effect waves-light btn" click.trigger="redirigirActualizar(persona.id)">
+                        <i class="material-icons left">edit</i> Editar
+                    </button>
+                </td>
+            </tr>        
+        </tbody>
+    </table>
+</div>
