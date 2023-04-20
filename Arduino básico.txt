@@ -1,0 +1,18 @@
+// Se declara el metodo inicializador y los puertos que vamos a usar, por donde saldrá señal digital
+void setup() {
+  // inicialización de variables
+  pinMode(PIN_SPI_MOSI, OUTPUT); // Puerto 12 tipo salida
+  pinMode(PIN_SPI_MISO, OUTPUT); // Puerto 11 tipo salida
+}
+
+// se configura el ciclo repetitivo que indica que envia por segundo un tik de corriente a la protoboard por el puerto 
+// 12 y el puerto 11
+void loop() {
+  digitalWrite(PIN_SPI_MOSI, HIGH);  // enciende el led conectado por resistencia de 220 ohmios al puerto 12(HIGH is the voltage level)
+  delay(1000);                      // espera por un segundo
+  digitalWrite(PIN_SPI_MISO, HIGH);   // enciende el led conectado por resistencia de 220 ohmios al puerto 11
+  delay(1000);                      // espera por 1 segundo
+  digitalWrite(PIN_SPI_MOSI, LOW);  // apaga el puerto 12
+  digitalWrite(PIN_SPI_MISO, LOW);  // apaga el puerto 11
+  delay(1000);  // espera un segundo para repetir el ciclo
+}
