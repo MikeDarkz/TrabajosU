@@ -1,0 +1,47 @@
+void setup() {
+  // For para declarar laas variables de los pines
+  // pinMode(LED_BUILTIN, OUTPUT);
+  for (int I = 2; I<=13; I++) {
+    pinMode(I,OUTPUT);
+  }
+}
+void loop() {
+  Vumetro(300,100);
+  Secuencia(200);
+  Bidireccional(300,100);
+}
+void Vumetro(int dEncendido, int dApagado) {
+  // for para encender Y apgar los leds 
+  for (int A = 2; A<=13; A++) {
+    digitalWrite(A,HIGH);
+    delay(dEncendido);
+    digitalWrite(A,LOW);
+    delay(dApagado);
+  }
+}
+void Secuencia(int diley) {
+  // for para encender los leds en orden 
+  for (int A = 2; A<=13; A++) {
+    digitalWrite(A,HIGH);
+    delay(diley);
+  }
+   // for para apagar los leds al mismo tiempo 
+  for (int A = 2; A<=13; A++) {
+    digitalWrite(A,LOW);
+  }                     
+}
+void Bidireccional(int dEncendido, int dApagado) {
+  // for para encender Y apgar los leds 
+  for (int A = 2; A<=13; A++) {
+    digitalWrite(A,HIGH);
+    delay(dEncendido);
+    digitalWrite(A,LOW);
+    delay(dApagado);
+  }
+  for (int A = 13; A>=2; A--) {
+    digitalWrite(A,HIGH);
+    delay(dEncendido);
+    digitalWrite(A,LOW);
+    delay(dApagado);
+  }
+}
