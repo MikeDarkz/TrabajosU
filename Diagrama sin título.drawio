@@ -1,0 +1,76 @@
+<mxfile host="app.diagrams.net" modified="2023-05-11T01:48:23.008Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36" etag="q5wTEiMo6z2-iFvxke69" version="21.2.9" type="github">
+  <diagram name="Página-1" id="ZNEF9aSeuNSlnfXbFdST">
+    <mxGraphModel dx="1257" dy="646" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="G0IQaKaEF_VKQMYPkuwB-4" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="180" y="30" width="240" height="610" as="geometry" />
+        </mxCell>
+        <mxCell id="G0IQaKaEF_VKQMYPkuwB-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="G0IQaKaEF_VKQMYPkuwB-1" target="G0IQaKaEF_VKQMYPkuwB-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="G0IQaKaEF_VKQMYPkuwB-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="G0IQaKaEF_VKQMYPkuwB-1" target="G0IQaKaEF_VKQMYPkuwB-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="G0IQaKaEF_VKQMYPkuwB-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="G0IQaKaEF_VKQMYPkuwB-1" target="G0IQaKaEF_VKQMYPkuwB-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="G0IQaKaEF_VKQMYPkuwB-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="G0IQaKaEF_VKQMYPkuwB-1" target="G0IQaKaEF_VKQMYPkuwB-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="G0IQaKaEF_VKQMYPkuwB-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="G0IQaKaEF_VKQMYPkuwB-1" target="G0IQaKaEF_VKQMYPkuwB-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="G0IQaKaEF_VKQMYPkuwB-1" value="Dueño mascota" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="80" y="80" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="G0IQaKaEF_VKQMYPkuwB-8" value="Aplicativo móvil para consulta de mascotas" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="180" y="10" width="260" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="G0IQaKaEF_VKQMYPkuwB-12" value="Iniciar sesión en el aplicativo" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="70" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="G0IQaKaEF_VKQMYPkuwB-14" value="Abrir opción de cámara con lectura de QR" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="180" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="G0IQaKaEF_VKQMYPkuwB-16" value="Leer código QR" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="300" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="G0IQaKaEF_VKQMYPkuwB-18" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="30" width="240" height="530" as="geometry" />
+        </mxCell>
+        <mxCell id="G0IQaKaEF_VKQMYPkuwB-20" value="Generar código QR" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="540" y="60" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="G0IQaKaEF_VKQMYPkuwB-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="G0IQaKaEF_VKQMYPkuwB-21" target="G0IQaKaEF_VKQMYPkuwB-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="G0IQaKaEF_VKQMYPkuwB-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="G0IQaKaEF_VKQMYPkuwB-21" target="G0IQaKaEF_VKQMYPkuwB-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="G0IQaKaEF_VKQMYPkuwB-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="G0IQaKaEF_VKQMYPkuwB-21" target="G0IQaKaEF_VKQMYPkuwB-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="G0IQaKaEF_VKQMYPkuwB-21" value="Sistema" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="797" y="70" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="G0IQaKaEF_VKQMYPkuwB-23" value="Asociar código QR a una mascota" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="540" y="190" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="G0IQaKaEF_VKQMYPkuwB-25" value="Ver información de mascota" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="520" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="G0IQaKaEF_VKQMYPkuwB-27" value="Retornar información de mascota de acuerdo a un Id" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="540" y="325" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="G0IQaKaEF_VKQMYPkuwB-29" value="Sistema de administración de mascotas" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="10" width="260" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="G0IQaKaEF_VKQMYPkuwB-30" value="Hacer consulta de mascota al sistema&amp;nbsp;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="420" width="120" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
