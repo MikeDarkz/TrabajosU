@@ -4,7 +4,7 @@
 ## Trabajo de Estructura de datos II
 
 ### Historia de Usuario
-![](https://github.com/MikeDarkz/TrabajosU/blob/master/HU.png?raw=true)
+![](https://github.com/MikeDarkz/TrabajosU/blob/master/Estructura%20datos%202/HU.png?raw=true)
 ### Diagrama de flujo Markdown
 
 ```mermaid
@@ -24,7 +24,7 @@ graph TD;
     
 ``` 
 ### Diagrama de casos de uso
-![](https://github.com/MikeDarkz/TrabajosU/blob/master/Diagrama%20sin%20t%C3%ADtulo.jpg?raw=true){width='100px'}
+![](https://github.com/MikeDarkz/TrabajosU/blob/master/Estructura%20datos%202/Diagrama%20casos%20de%20uso.jpg?raw=true){width='100px'}
 
 ### Pseudocódigo
 <b>CA1:</b> Generar código QR que conecte a la base de datos.
