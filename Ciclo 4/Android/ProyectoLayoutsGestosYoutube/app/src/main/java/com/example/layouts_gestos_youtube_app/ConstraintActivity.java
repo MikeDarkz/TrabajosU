@@ -1,4 +1,4 @@
-package com.example.redirigirapp;
+package com.example.layouts_gestos_youtube_app;
 
 import androidx.appcompat.app.AppCompatActivity;
 

@@ -1,4 +1,4 @@
-package com.example.redirigirapp;
+package com.example.layouts_gestos_youtube_app;
 
 import android.content.Intent;
 import android.os.Bundle;
