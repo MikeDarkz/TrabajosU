@@ -1,5 +1,6 @@
 package com.example.layouts_gestos_youtube_app;
 
+import android.app.ActivityOptions;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -30,16 +31,19 @@ public class MainActivity extends AppCompatActivity {
 
     private void openLayouts() {
         Intent intent = new Intent(this, ConstraintActivity.class);
-        startActivity(intent);
+        ActivityOptions options = ActivityOptions.makeCustomAnimation(this, R.anim.slide_fade_in, R.anim.slide_fade_out);
+        startActivity(intent, options.toBundle());
     }
 
     private void openGestos() {
         Intent intent = new Intent(this, Gestos.class);
-        startActivity(intent);
+        ActivityOptions options = ActivityOptions.makeCustomAnimation(this, R.anim.fade_in, R.anim.fade_out);
+        startActivity(intent, options.toBundle());
     }
 
     private void openYoutubeApp() {
         Intent intent = new Intent(this, Youtube.class);
-        startActivity(intent);
+        ActivityOptions options = ActivityOptions.makeCustomAnimation(this, R.anim.fade_in, R.anim.fade_out);
+        startActivity(intent, options.toBundle());
     }
 }

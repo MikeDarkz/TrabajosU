@@ -2,16 +2,20 @@ package com.example.layouts_gestos_youtube_app;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.GestureDetector;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 public class Linear2Frame extends AppCompatActivity {
+    private GestureDetector gDetector;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_activity3_frame);
+        gDetector = new GestureDetector(this, new EscuchaGestos(this, Frame2Table.class, Constraint2Linear.class));
 
         final Button buttonFrameNext = findViewById(R.id.btn05);
         buttonFrameNext.setOnClickListener(new View.OnClickListener() {
@@ -27,6 +31,12 @@ public class Linear2Frame extends AppCompatActivity {
             }
         });
 
+    }
+
+    @Override
+    public boolean onTouchEvent(MotionEvent event){
+        this.gDetector.onTouchEvent(event);
+        return super.onTouchEvent(event);
     }
 
     private void openActivityTable() {

@@ -21,7 +21,7 @@ public class Youtube extends AppCompatActivity {
         webSettings.setLoadWithOverviewMode(true);
         webSettings.setUseWideViewPort(true);
 
-        String miUrlVideoYouTube = "https://www.youtube.com/embed/iC_ClvO-FZE?start=32304";
+        String miUrlVideoYouTube = "https://www.youtube.com/embed/iC_ClvO-FZE?start=32304&autoplay=1&mute=1";
         String dataUrl = generateDataUrl(miUrlVideoYouTube);
         myWebView.loadData(dataUrl, "text/html", "utf-8");
     }
@@ -31,7 +31,7 @@ public class Youtube extends AppCompatActivity {
                 "<body>" +
                 "<h2>Video desde YouTube</h2>" +
                 "<br>" +
-                "<iframe width=\"100%\" height=\"25%\" src=\"" + urlVideo + "\" frameborder=\"0\" allowfullscreen/>" +
+                "<iframe width=\"100%\" height=\"25%\" src=\"" + urlVideo + "\" frameborder=\"0\" allowfullscreen allow=\"autoplay\"/>" +
                 "</body>" +
                 "</html>";
     }

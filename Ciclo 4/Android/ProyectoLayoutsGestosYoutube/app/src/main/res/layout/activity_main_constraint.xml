@@ -22,14 +22,15 @@
         />
 
     <EditText
+        android:id="@+id/editText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="ingrese aqui un valor"
         android:inputType="text"
         android:maxLines="3"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="52dp"
-        tools:ignore="MissingConstraints" />
+        tools:layout_editor_absoluteY="31dp" />
 
     <Button
         android:id="@+id/btn01"
@@ -42,5 +43,15 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="112dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/android" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
